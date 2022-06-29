@@ -1,0 +1,5 @@
+FROM ymougenel/java_maven_image
+EXPOSE 8080
+WORKDIR /app
+COPY . .
+CMD  mvn spring-boot:run
